@@ -8,11 +8,11 @@ const Help = () => {
     <View style={styles.helpContainer}>
       <View>
         <Text
-        style={[{ fontWeight: 'bold' }, { color: 'black' }]}>
+        style={[{ fontWeight: 'bold' }, { color: 'black' }, {fontSize:18}]}>
           צריך עזרה?
           </Text>
         <Text
-          style={{color: 'blue'}}
+          style={[{color: 'blue'}, {fontSize:16}]}
           onPress={() => Linking.openURL('http://google.com')}>
           יצירת קשר עם התמיכה
         </Text>

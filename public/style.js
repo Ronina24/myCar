@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 
   inputWrapper: {
-    marginTop: height * 0.02,
+    marginTop: height * 0.03,
     width: width * 0.8,
     borderWidth: 0.5,
     borderRadius: 3,
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
   },
 
   arrowContainer: {
-    height: height * 0.08,
-    width: height * 0.08,
+    height: height * 0.09,
+    width: height * 0.09,
     borderRadius: 100,
     overflow: 'hidden',
     alignItems: 'center',
