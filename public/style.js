@@ -3,56 +3,55 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { height, width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#FAFAFA',
-    height: height
-  },
-
-  headerContainer: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    height: height * 0.1,
-    alignItems: 'center',
-    paddingHorizontal: 16,
-  },
-
-  clockImage: {
-    width: '15%',
-    height: '70%',
-  },
-
-  title: {
-    fontWeight: 'bold',
-    fontSize: height * 0.04,
+  login: {
+    paddingHorizontal: 40,
     color: 'black',
-    flex: 1,
-    textAlign: 'center',
+    justifyContent: 'center'
+  },
+  headerContainer: {
+    flexDirection: 'row-reverse',
   },
 
-  inputContainer: {
+  inputWrapper: {
     marginTop: height * 0.02,
-    paddingHorizontal: width * 0.2,
-  },
-
-  input: {
-    textAlign: 'right',
-    borderColor: 'black',
-    borderWidth: 1,
-    paddingHorizontal: 10,
-  },
-
-  helpContainer: {
-    marginTop: height * 0.3,
+    width: width * 0.8,
+    borderWidth: 0.5,
+    borderRadius: 3,
     flexDirection: 'row-reverse',
     alignItems: 'center',
-    justifyContent: 'space-around'
+    borderColor: '#DCDCDC',
+    height: height * 0.06,
+    shadowColor: '#DCDCDC',
+    elevation: 1
+  },
+
+  callImage: {
+    width: 20,
+    height: 20,
+    marginRight: 10,
+    
+  },
+  helpContainer: {
+    marginTop: height * 0.05,
+    flexDirection: 'row-reverse',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
 
   arrowContainer: {
-    backgroundColor: 'purple',
+    height: height * 0.08,
+    width: height * 0.08,
     borderRadius: 100,
-    padding: '5%'
-  }
+    overflow: 'hidden',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  carLogo: {
+    marginTop: height * 0.05,
+    width: '75%'
+  },
+
 
 });
 

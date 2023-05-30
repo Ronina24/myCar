@@ -1,18 +1,18 @@
-import { View, TextInput } from 'react-native';
+import { View, TextInput, Image } from 'react-native';
 import styles from '../public/style';
 import React from 'react';
 
-const InputBox = ({ placeholder, keyboardType }) => {
-    return (
-      <View style={styles.inputContainer}>
+const InputBox = ({ placeholder, keyboardType, imageSource }) => {
+  return (
+      <View style={styles.inputWrapper}>
+      <Image source={imageSource} style={styles.callImage} />
         <TextInput
-          style={styles.input}
           placeholder={placeholder}
           keyboardType={keyboardType}
         />
       </View>
-    );
-  };
+  );
+};
 
   export default InputBox;
 
